@@ -1,0 +1,3 @@
+[submodule "RSFile"]
+	path = RSFile
+	url = https://github.com/rs-classes/RSFile.git
