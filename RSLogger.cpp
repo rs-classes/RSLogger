@@ -2,8 +2,8 @@
 
 RSLogger::RSLogger(const char* name)
 {
-  const char* name = "./logs/test.txt";
-  m_file = new RSFile(name, "w");
+  m_name = name;
+  m_file = new RSFile(m_name, "w");
   InitLog();
 }
 int RSLogger::WriteLog(const char* message)
