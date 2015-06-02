@@ -1,14 +1,5 @@
 #include "include/RSLogger.h"
 
-RSLogger& RSLogger::getInstance(const char* name)
-{
-  // The only instance
-  // Guaranteed to be lazy initialized
-  // Guaranteed that it will be destroyed correctly
-  static RSLogger instance;
-  return instance;
-}
-
 RSLogger::RSLogger(const char* name)
 {
   m_name = name;
